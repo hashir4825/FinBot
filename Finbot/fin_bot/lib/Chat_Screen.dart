@@ -1,3 +1,4 @@
+import 'package:fin_bot/Voice_Command_Screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -63,6 +64,9 @@ class _Chat_ScreenState extends State<Chat_Screen> {
                 height: 60,// Set your desired width here
                 child: ElevatedButton(
                   onPressed: () {
+
+                    Navigator.push(context, MaterialPageRoute(builder:
+                    (context)=>VoiceCommandScreen()));
                     // Add your onPressed functionality here
                   },
                   style: ElevatedButton.styleFrom(

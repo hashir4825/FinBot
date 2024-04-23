@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'Chat_Screen.dart';
+import 'Splash_Screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: Chat_Screen()
+        home: SplashScreen()
     );
   }
 }
