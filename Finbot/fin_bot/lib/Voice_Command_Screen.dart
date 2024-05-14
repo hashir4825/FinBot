@@ -38,10 +38,14 @@ class _VoiceCommandScreenState extends State<VoiceCommandScreen>
             Container(
               child: ElevatedButton(
                 onPressed: () {},
-                style: ElevatedButton.styleFrom(backgroundColor: Color(0XFFC6F432)),
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0XFFC6F432)),
                 child: Text(
                   'AI Buddy',
-                  style: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold),
                 ),
               ),
             ),
@@ -92,8 +96,17 @@ class _VoiceCommandScreenState extends State<VoiceCommandScreen>
                     onTap: () {
                       // Handle onTap for the first picture
                     },
-                    child: Image.asset('assets/images/fi-rr-cross-small.1 1.png',
-                        width: 80, height: 100),
+                    child: Stack(children: [
+
+                      Image.asset('assets/images/Ellipse 85.png',width: 80,
+                        height: 100,),
+
+                      Image.asset(
+                          'assets/images/fi-rr-cross-small'
+                          '.1 1.png',
+                          width: 80,
+                          height: 100),
+                    ]),
                   ),
                 ],
               ),

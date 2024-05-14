@@ -1,3 +1,4 @@
+import 'package:fin_bot/Dashboard.dart';
 import 'package:fin_bot/Voice_Command_Screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -66,7 +67,7 @@ class _Chat_ScreenState extends State<Chat_Screen> {
                   onPressed: () {
 
                     Navigator.push(context, MaterialPageRoute(builder:
-                    (context)=>VoiceCommandScreen()));
+                    (context)=>DashboardPage()));
                     // Add your onPressed functionality here
                   },
                   style: ElevatedButton.styleFrom(
