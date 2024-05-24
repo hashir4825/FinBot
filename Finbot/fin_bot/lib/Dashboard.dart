@@ -20,6 +20,7 @@ class _DashboardPageState extends State<DashboardPage> {
     return Scaffold(
       body: Container(
         color: Colors.black,
+        height: MediaQuery.of(context).size.height,
         child: Column(
           children: [
             SizedBox(
