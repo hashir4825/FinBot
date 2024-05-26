@@ -4,6 +4,7 @@ import 'package:fin_bot/Voice_Command_Screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'Custom_Widgets/Chat_Bubble.dart';
 
@@ -19,7 +20,7 @@ class _DashboardPageState extends State<DashboardPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.black,
+        color: Colors.white,
         height: MediaQuery.of(context).size.height,
         child: Column(
           children: [
@@ -31,12 +32,13 @@ class _DashboardPageState extends State<DashboardPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Image.asset('assets/images/Frame 3.png'),
+                  Image.asset('assets/images/white_dashes.png'),
+                  //FaIcon(FontAwesomeIcons.ellipsisVertical),
                   Row(
                     children: [
                       Text(
                         'Hi Ahsan',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.black,fontSize: 20),
                       ),
                       SizedBox(
                         width: 6,
@@ -57,7 +59,7 @@ class _DashboardPageState extends State<DashboardPage> {
                 padding: const EdgeInsets.only(left: 34.0, right: 34),
                 child: Text(
                   "How may I help",
-                  style: TextStyle(color: Colors.white, fontSize: 34),
+                  style: TextStyle(color: Colors.black, fontSize: 34),
                 ),
               ),
             ),
@@ -66,7 +68,7 @@ class _DashboardPageState extends State<DashboardPage> {
                 padding: const EdgeInsets.only(left: 34.0, right: 34),
                 child: Text(
                   "you today !",
-                  style: TextStyle(color: Colors.white, fontSize: 34),
+                  style: TextStyle(color: Colors.black, fontSize: 34),
                 ),
               ),
             ),
@@ -89,7 +91,7 @@ class _DashboardPageState extends State<DashboardPage> {
                       height: 250,
 
                       decoration: BoxDecoration(
-                        color: Color(0XFFC6F432),
+                        color: Color(0xFF416FDF),
                         borderRadius: BorderRadius.circular(20),
                         boxShadow: [
                           BoxShadow(
@@ -109,15 +111,15 @@ class _DashboardPageState extends State<DashboardPage> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Image.asset('assets/images/rumor 1.png'),
-                                Image.asset('assets/images/icon _arrow forward_.png'),
+                                Image.asset('assets/images/white_rumour.png'),
+                                Image.asset('assets/images/white_arrow.png'),
 
                               ],),
 
                             Text(
                               'Talk\nWith\nBot',
                               style: TextStyle(
-                                color: Colors.black,
+                                color: Colors.white,
                                 fontSize: 35,
                                 fontWeight: FontWeight.bold
                               ),
@@ -143,7 +145,7 @@ class _DashboardPageState extends State<DashboardPage> {
                           height: 120,
 
                           decoration: BoxDecoration(
-                            color: Colors.blue.shade100,
+                            color: Color(0xFF416FDF),
                             borderRadius: BorderRadius.circular(20),
                             boxShadow: [
                               BoxShadow(
@@ -166,9 +168,11 @@ class _DashboardPageState extends State<DashboardPage> {
                                     Container(
                                       height:30,width: 40,
 
-                                        child: Image.asset('assets/images/chatIcon.png')),
-                                      Image.asset('assets/images/icon _arrow '
-                                         'forward_.png'),
+                                        child: Image.asset
+                                          ('assets/images/chat_icon_white'
+                                            '.png')),
+                                      Image.asset('assets/images/white_arrow'
+                                          '.png'),
 
                                   ],),
 
@@ -177,7 +181,7 @@ class _DashboardPageState extends State<DashboardPage> {
                                   child: Text(
                                     'Chat With Bot',
                                     style: TextStyle(
-                                        color: Colors.black,
+                                        color: Colors.white,
                                         fontSize: 20,
                                         fontWeight: FontWeight.bold
                                     ),
@@ -197,7 +201,7 @@ class _DashboardPageState extends State<DashboardPage> {
                         height: 120,
 
                         decoration: BoxDecoration(
-                          color: Color(0XFFFEC4DD),
+                          color: Color(0xFF416FDF),
                           borderRadius: BorderRadius.circular(20),
                           boxShadow: [
                             BoxShadow(
@@ -220,15 +224,15 @@ class _DashboardPageState extends State<DashboardPage> {
                                   Container(
                                       height:30,width: 40,
                                       child: Image.asset
-                                        ('assets/images/imageIcon.png')),
-                                  Image.asset('assets/images/icon _arrow forward_.png'),
+                                        ('assets/images/white_image.png')),
+                                  Image.asset('assets/images/white_arrow.png'),
 
                                 ],),
 
                               Text(
                                 'Search By\nImage',
                                 style: TextStyle(
-                                    color: Colors.black,
+                                    color: Colors.white,
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold
                                 ),
@@ -256,11 +260,11 @@ class _DashboardPageState extends State<DashboardPage> {
                 children: [
                   Text(
                     'History',
-                    style: TextStyle(color: Colors.white, fontSize: 15),
+                    style: TextStyle(color: Colors.black, fontSize: 20),
                   ),
                   Text(
                     'See all',
-                    style: TextStyle(color: Colors.white, fontSize: 15),
+                    style: TextStyle(color: Colors.black, fontSize: 20),
                   )
                 ],
               ),
@@ -271,24 +275,24 @@ class _DashboardPageState extends State<DashboardPage> {
                   text: 'I want to check my balance',
                   leadingImage: AssetImage('assets/images/rumor 1.png'),
                   icon: Icons.more_vert,
-                  color: Colors.grey.shade700,
-                  backgroundColor: Color(0XFFC6F432),
+                  color: Colors.grey.shade200,
+                  backgroundColor: Colors.transparent,
                 ),
                 SizedBox(height: 10),
                 ChatBubble(
                   text: 'Show me expenses of year 2023',
-                  leadingImage: AssetImage('assets/images/chatIcon.png'),
+                  leadingImage: AssetImage('assets/images/chat_icon_black.png'),
                   icon: Icons.more_vert,
-                  color: Colors.grey.shade700,
-                  backgroundColor: Colors.tealAccent,
+                  color: Colors.grey.shade200,
+                  backgroundColor: Colors.transparent,
                 ),
                 SizedBox(height: 10),
                 ChatBubble(
                   text: 'Best advices on seeing that',
-                  leadingImage: AssetImage('assets/images/imageIcon.png'),
+                  leadingImage: AssetImage('assets/images/black_image.png'),
                   icon: Icons.more_vert,
-                  color: Colors.grey.shade700,
-                  backgroundColor: Colors.orangeAccent,
+                  color: Colors.grey.shade200,
+                  backgroundColor: Colors.transparent,
                 ),
                 SizedBox(height: 10),
               ],

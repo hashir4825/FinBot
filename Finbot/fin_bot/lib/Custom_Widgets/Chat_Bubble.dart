@@ -45,10 +45,10 @@ class ChatBubble extends StatelessWidget {
           SizedBox(width: 10),
           Text(
             text,
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.black),
           ),
           SizedBox(width: 10),
-          Icon(icon, color: Colors.white),
+          Icon(icon, color: Colors.black),
         ],
       ),
     );
