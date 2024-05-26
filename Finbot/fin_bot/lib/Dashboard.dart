@@ -135,7 +135,8 @@ class _DashboardPageState extends State<DashboardPage> {
                     children: [
                       GestureDetector(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>ChatWithBot()));
+                          Navigator.push(context, MaterialPageRoute(builder:
+                              (context)=>ChatScreen()));
                         },
                         child: Container(
                           width: 160,
